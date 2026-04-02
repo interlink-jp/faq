@@ -168,7 +168,49 @@ http://localhost:3000
 
 ---
 
-## ステップ10：終了する
+## ステップ10：インターネットに公開する
+
+ここまでのFAQシステムは、自分のパソコンの中だけで動いています。せっかく作ったので、インターネットに公開して、誰でもアクセスできるようにしてみましょう。
+
+「Vercel（バーセル）」という無料のサービスを使います。
+
+### 10-1：Vercelのアカウントを作る
+
+1. ブラウザで [vercel.com](https://vercel.com) を開く
+2. 「Sign Up」をクリック
+3. 「Continue with Email」を選ぶ（GitHubアカウントは不要です）
+4. メールアドレスを入力して登録する
+5. 届いた確認メールのリンクをクリックして完了
+
+### 10-2：公開する
+
+Claude Codeがまだ起動している状態で、以下をコピー＆ペーストしてください。
+
+```
+このアプリをVercelにデプロイして。
+```
+
+Claude Codeが `npx vercel` コマンドを実行します。初回は以下のような質問が表示されるので、そのまま `Enter` を押していけばOKです。
+
+- 「Set up and deploy?」→ `y` を入力
+- 「Which scope?」→ そのまま `Enter`
+- 「Link to existing project?」→ `n` を入力
+- 「What's your project's name?」→ そのまま `Enter`
+- 「In which directory is your code located?」→ そのまま `Enter`
+
+しばらく待つと、こんなURLが表示されます。
+
+```
+https://faq-app-xxxxx.vercel.app
+```
+
+**このURLを誰かに送れば、あなたが作ったFAQシステムを見てもらえます！ 🌐**
+
+> **💡 ポイント：** Vercelは無料で使えます。作ったアプリを消したくなったら、[vercel.com](https://vercel.com) の管理画面からいつでも削除できます。
+
+---
+
+## ステップ11：終了する
 
 ### Claude Codeを終了する
 
