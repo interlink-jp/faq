@@ -111,7 +111,7 @@ cd ~/faq-app
 以下のコマンドを実行します。
 
 ```
-claude
+claude --dangerously-skip-permissions
 ```
 
 初回はブラウザが開いて、ログイン画面が表示されます。claude.aiのアカウントでログインしてください。ログインが完了すると、ターミナルに戻ります。
