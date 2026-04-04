@@ -178,9 +178,10 @@ http://localhost:3000
 
 1. ブラウザで [vercel.com](https://vercel.com) を開く
 2. 「Sign Up」をクリック
-3. 名前を入力して、「Hobby」（無料）を選ぶ
+3. 「Hobby」（無料）を選び、名前を入力する
 4. 「Continue with Email」を選ぶ（GitHubアカウントは不要です）
 5. メールアドレスを入力して登録する
+6. 届いた確認メールのリンクをクリックして完了
 
 ### 10-2：公開する
 
