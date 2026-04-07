@@ -7,8 +7,6 @@
 
 {% seo %}
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-<link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
-<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 {% include head-custom.html %}
 </head>
 <body>
@@ -19,9 +17,22 @@
 
 {{ content }}
 
-<div style="text-align: center; margin-top: 3em; padding-top: 2em; border-top: 1px solid #e1e4e8;">
-<p>この記事が役に立ったら押してください</p>
-<applause-button multiclap="false" style="width: 58px; height: 58px; margin: 0 auto;"></applause-button>
+<div style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #e1e4e8;">
+<script src="https://giscus.app/client.js"
+        data-repo="interlink-jp/faq"
+        data-repo-id="R_kgDOR3wsew"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOR3wse84C6RWV"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="ja"
+        crossorigin="anonymous"
+        async>
+</script>
 </div>
 
 </div>
