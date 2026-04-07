@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /
+---
+
 # Claude Codeではじめてのアプリ開発：FAQシステムを作ろう
 
 ## はじめに
