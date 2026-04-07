@@ -141,15 +141,10 @@ claude --dangerously-skip-permissions
 
 初回はブラウザが開いて、ログイン画面が表示されます。claude.aiのアカウントでログインしてください。ログインが完了すると、ターミナルに戻ります。
 
-途中で以下のような確認メッセージが表示されることがあります。
+起動時に英語で確認メッセージが表示されることがあります。
 
-```
-Quick safety check: Is this a project you created or one you trust?
-❯ 1. Yes, I trust this folder
-  2. No
-```
-
-これは「このフォルダを信頼しますか？」という安全確認です。自分で作ったフォルダなので `1` を選んでください。
+- **「Do you trust this folder?」**（このフォルダを信頼しますか？）と聞かれたら → **Yes** を選んでください。自分で作ったフォルダなので問題ありません。
+- **「Do you want to skip permission checks?」**（許可チェックをスキップしますか？）と聞かれたら → **Yes** を選んでください。Claudeが作業のたびに「いいですか？」と聞かなくなり、スムーズに進められます。
 
 `>` という入力欄が表示されたら準備完了です。
 
