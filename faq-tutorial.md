@@ -204,9 +204,9 @@ http://localhost:3000
 ### 10-1：Vercelのアカウントを作る
 
 1. ブラウザで [vercel.com/signup](https://vercel.com/signup) を開く
-2. **「Hobby」（無料）** を選び、Your Nameに名前を入力する
-3. 「Continue with Email」を選ぶ（GitHubアカウントは不要です）
-4. メールアドレスを入力して登録する
+2. **「Hobby」（無料）** を選ぶ（「Pro」は有料なので選ばないでください）
+3. 「Your Name」に名前を入力して「Continue」をクリック
+4. 「Continue with Email」を選び、メールアドレスを入力して登録する（GoogleやAppleなど他の認証方法でもOKです）
 5. 届いた確認メールのリンクをクリックして完了
 
 ### 10-2：公開する
