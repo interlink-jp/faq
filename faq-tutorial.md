@@ -141,6 +141,16 @@ claude --dangerously-skip-permissions
 
 初回はブラウザが開いて、ログイン画面が表示されます。claude.aiのアカウントでログインしてください。ログインが完了すると、ターミナルに戻ります。
 
+途中で以下のような確認メッセージが表示されることがあります。
+
+```
+Quick safety check: Is this a project you created or one you trust?
+❯ 1. Yes, I trust this folder
+  2. No
+```
+
+これは「このフォルダを信頼しますか？」という安全確認です。自分で作ったフォルダなので `1` を選んでください。
+
 `>` という入力欄が表示されたら準備完了です。
 
 ---
