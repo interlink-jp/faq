@@ -109,6 +109,11 @@ node -v
 npm install -g @anthropic-ai/claude-code
 ```
 
+> **Windowsでエラーが出た場合：** 赤い文字で「このシステムではスクリプトの実行が無効になっているため...」と表示された場合は、先に以下のコマンドを実行してから、もう一度上のコマンドを試してください。
+> ```powershell
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+
 ---
 
 ## ステップ5：作業フォルダを作って移動する
