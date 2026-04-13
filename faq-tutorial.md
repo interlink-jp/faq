@@ -146,7 +146,7 @@ claude --dangerously-skip-permissions
 
 > **Windowsで「git-bash」のエラーが出た場合：** 「Claude Code on Windows requires git-bash」と表示された場合は、[Git for Windows（x64 Setup）](https://github.com/git-for-windows/git/releases/latest)からインストーラーをダウンロードしてインストールしてください。設定はすべてそのまま（デフォルト）でOKです。インストール後、PowerShellを閉じて開き直してから、もう一度 `claude --dangerously-skip-permissions` を実行してください。
 
-初回はブラウザが開いて、ログイン画面が表示されます。claude.aiのアカウントでログインしてください。ログインが完了すると、ターミナルに戻ります。
+初回はブラウザが開いて、ログイン画面が表示されます。claude.aiのアカウントでログインしてください。ログイン後に「デスクトップでClaudeを最大限に活用」という画面が出ることがありますが、**「スキップ」を押してください**（デスクトップアプリは不要です）。ログインが完了すると、ターミナルに戻ります。
 
 起動時に英語で確認メッセージが表示されることがあります。
 
