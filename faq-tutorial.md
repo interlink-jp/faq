@@ -283,6 +283,7 @@ claude
 | ブラウザで何も表示されない | アドレスが `http://localhost:3000` になっているか確認。ポート番号が違う場合はClaude Codeの出力を確認 |
 | Claude Codeが途中で止まった | `/exit` で一度終了して `claude` で再起動。「さっきの続きをやって」と入力 |
 | 「コマンドを実行していいですか」が多くて面倒 | Claude Codeの質問には毎回 `y` で答えてOK（この練習では安全です） |
+| Git for Windowsのインストールで「x64」を選んだがうまくいかない | Surface Pro Xなど、ARMプロセッサ搭載のPCの場合は「ARM64 Setup」を選んでください |
 
 ---
 
