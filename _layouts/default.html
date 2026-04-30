@@ -10,6 +10,13 @@
 <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 {% include head-custom.html %}
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:6px;right:6px;padding:2px 8px;font-size:12px;line-height:1.4;color:#586069;background:rgba(175,184,193,.2);border:1px solid rgba(175,184,193,.4);border-radius:4px;cursor:pointer;opacity:0;transition:opacity .15s}
+pre:hover .copy-btn,.copy-btn:focus{opacity:1}
+.copy-btn:hover{background:rgba(175,184,193,.35)}
+.copy-btn[data-copied]{color:#22863a;border-color:rgba(34,134,58,.4)}
+</style>
 </head>
 <body>
 <div class="container-lg px-3 my-5 markdown-body">
@@ -47,5 +54,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
 integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 <script>anchors.add();</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('pre > code').forEach(function(code){
+    var pre=code.parentNode;
+    var btn=document.createElement('button');
+    btn.className='copy-btn';
+    btn.textContent='コピー';
+    btn.setAttribute('aria-label','コードをクリップボードにコピー');
+    btn.addEventListener('click',function(){
+      navigator.clipboard.writeText(code.textContent).then(function(){
+        btn.textContent='コピー済み';
+        btn.setAttribute('data-copied','');
+        setTimeout(function(){btn.textContent='コピー';btn.removeAttribute('data-copied')},2000);
+      });
+    });
+    pre.appendChild(btn);
+  });
+});
+</script>
 </body>
 </html>
